@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 14 : Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Password Generator</h1>
+      <h3>What include</h3>
+      <p id="plength">
+        Enter total length of password<input type="number" id="length" />
+      </p>
+      <div class="box">
+        <div class="left">
+          <p>
+            <input type="checkbox" id="number" name="password" checked /> Number
+            0-9
+          </p>
+          <p>
+            <input type="checkbox" id="symbol" name="password" checked />
+            Special Symbols i.e $,%
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            <input type="checkbox" id="smallAlphabet" name="password" checked />
+            Small Alphabets a-z
+          </p>
+          <p>
+            <input type="checkbox" id="largeAlphabet" name="password" checked />
+            Large Alphabets A-Z
+          </p>
+        </div>
+      </div>
+      <input type="button" value="Generate Password" id="btn" />
+      <div id="output">Password</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
